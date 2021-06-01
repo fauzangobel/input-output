@@ -1,21 +1,25 @@
 #include<iostream>
 using namespace std;
 
-void menampilkanData(string kata, int angka)
+string getDataSatu(string kata)
 {
-    cout<<"OUTPUTNYA ";cin>>kata;
-    cout<<"Data pertama : "<<kata<<endl;
-    cout<<"Data kedua : "<<angka<<endl;
+    return kata;
+}
+int getDataDua(int angka)
+{
+    return angka;
 }
 
 int main()
 {
     string kata;
     int angka;
-    cout<<"PROGRAM INPUT";cin>>kata;
+
     cout<<"Masukkan kata  : ";cin>>kata;
     cout<<"Masukkan angka : ";cin>>angka;
-    
-    menampilkanData(kata,angka);
+
+    cout<<"Berikut Isi dari data pertama : "<<getDataSatu(kata)<<endl;
+    cout<<"Berikut Isi dari data kedua   : "<<getDataDua(angka)<<endl;
 }
+
 
